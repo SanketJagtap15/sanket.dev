@@ -1,3 +1,4 @@
+
 #!/usr/bin/env sh
 
 # abort on errors
@@ -10,15 +11,12 @@ npm run build
 cd dist
 
 # if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
+echo 'sanketjagtap.in' > CNAME
 
 # git init
 git checkout main
 git add -A
-git commit -m 'deploy 2'
-
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
+git commit -m 'deploy with custom domain'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:SanketJagtap15/sanket.dev.git main:gh-pages
